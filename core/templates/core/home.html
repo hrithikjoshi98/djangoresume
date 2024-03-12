@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block css %}
+      
+{% endblock css %}
+
+{% block content %}
+    <div >
+        <div class="text-center">
+            <img width="150px" height="150px" src="{% static 'core/images/test.jpg' %}" alt="Profile Pic" class="mt-4 img-thumbnail">
+        </div>
+        <div class="mt-3 text-white mx-5 text-justify">
+            <h3 class="font-weight-bold">Hello,</h3>
+            <div>
+                <p>
+                    I am Hrithik Joshi. Keen to intern in Django, leveraging my Python skills for dynamic web app development. Eager to explore MVT architecture, data management, and user authentication. Ready to contribute, learn, and grow within the Django community.
+                </p>
+            </div>
+        </div>
+        <div class="text-center">    
+            <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5 ms-5">Contact</a>
+        </div>      
+    </div>
+{% endblock content %}
